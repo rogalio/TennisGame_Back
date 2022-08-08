@@ -27,6 +27,6 @@ app.post("/score", async (req, res) => {
   }
 });
 
-const server = app.listen(8080, () => {
+const server = app.listen(process.env.PORT, () => {
   console.log("Server started");
 });
