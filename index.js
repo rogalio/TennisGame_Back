@@ -5,7 +5,7 @@ const bp = require("body-parser");
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 app.use(cors());
-const { Match } = require("./script/index");
+const { Match } = require("./script/script");
 
 app.get("/", async (req, res) => {
   res.json("Bienvenue sur l'api de TennisGame");
